@@ -7,7 +7,14 @@
     --White: hsl(0, 0%, 100%);
 }
 
+html {
+    font-size: 18px;
+
+}
+
 body {
+    font-family: 'Outfit', sans-serif;
+
     height: 100vh;
     width: 100vw;
     background-color: var(--Very-dark-blue-main-BG);
@@ -22,8 +29,9 @@ main {
     width: 300px;
     height: 650px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
+    border-radius: 25px;
 
 }
 
@@ -32,6 +40,7 @@ main {
     height: 300px;
     padding: 0;
     border: none;
+    border-radius: 5%;
 
 }
 
@@ -41,6 +50,7 @@ main {
 
 .equilibrium-image {
     width: 100%;
+    border-radius: 5%;
 }
 
 .icon-view {
@@ -51,8 +61,59 @@ main {
     padding: 125px;
     background-color: var(--Cyan);
     opacity: 0;
+    border-radius: 5%;
 }
 
-.button-container:hover>.equilibrium-image-container>.icon-view {
+.button-container:hover>.equilibrium-image-container>.icon-view,
+.button-container:focus-visible>.equilibrium-image-container>.icon-view {
     opacity: 0.7;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.main-text {
+    color: var(--Soft-blue);
+}
+
+.ethereum-time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ethereum {
+    display: flex;
+}
+
+.etherium-icon {
+    height: 25px;
+    width: 15px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.ethereum-text {
+    color: var(--Cyan);
+    display: block;
+}
+
+.time {
+    display: flex;
+}
+
+.clock-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+
+}
+
+.time-text {
+    color: var(--Soft-blue);
+    margin-left: 10px;
+
 }
